@@ -6,3 +6,27 @@ class: blog
 author_link: https://github.com/taiju
 author_name: taiju
 description: Nothing is there.
+elements:
+  template_set:
+    component: core
+    importer: template_set
+    data:
+      base_path: templates
+      require: 1
+      templates:
+        system:
+          dynamic_error:
+            description_label: 'Displays errors for dynamically-published templates.'
+            label: 'Dynamic Error'
+          popup_image:
+            description_label: 'Displays image when user clicks a popup-linked image.'
+            label: 'Popup Image'
+          search_results:
+            description_label: 'Displays results of a search.'
+            label: 'Search Results'
+          comment_preview:
+            description_label: 'Displays preview of comment.'
+            label: 'Comment Preview'
+          comment_response:
+            description_label: 'Displays error, pending or confirmation message for comments.'
+            label: 'Comment Response'
